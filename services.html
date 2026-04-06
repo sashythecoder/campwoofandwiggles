@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Camp Woof's and Wiggle's - Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+      :root {
+        --primary-brown: #8b5e3c;
+        --primary-blue: #9ca9b0;
+        --secondary-tan: #c49a6c;
+        --secondary-gold: #ecac58;
+        --secondary-pink: #fbd3df;
+        --cream: #f7efe4;
+        --black: #000000;
+        --white: #ffffff;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: var(--cream);
+        color: var(--black);
+      }
+
+      h1, h2, h3, .navbar-brand {
+        font-family: "Grandstander", cursive;
+      }
+
+      .navbar { background-color: var(--white) !important; }
+      .navbar .nav-link { color: var(--black); font-weight: 600; }
+      .navbar .nav-link.active, .navbar .nav-link:hover { color: var(--primary-brown); }
+
+      .btn-brand {
+        background-color: var(--secondary-gold);
+        border-color: var(--secondary-gold);
+        color: var(--black);
+        font-weight: 700;
+      }
+      .btn-brand:hover {
+        background-color: var(--primary-brown);
+        border-color: var(--primary-brown);
+        color: var(--white);
+      }
+      .btn-outline-brand {
+        border: 2px solid var(--primary-brown);
+        color: var(--primary-brown);
+        font-weight: 700;
+      }
+      .btn-outline-brand:hover {
+        background-color: var(--primary-brown);
+        color: var(--white);
+      }
+
+      .page-hero {
+        min-height: 52vh;
+        background:
+          linear-gradient(rgba(156, 169, 176, 0.6), rgba(139, 94, 60, 0.5)),
+          url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      }
+
+      .section-title { color: var(--primary-brown); }
+      .accent-text { color: var(--secondary-gold); }
+      .info-card {
+        background-color: var(--white);
+        border: 0;
+        border-radius: 1rem;
+      }
+      .feature-badge {
+        background-color: var(--primary-blue);
+        color: var(--white);
+        padding: 0.6rem 1rem;
+        border-radius: 999px;
+        font-weight: 600;
+        display: inline-block;
+      }
+      .service-icon {
+        width: 72px;
+        height: 72px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: var(--secondary-pink);
+        color: var(--primary-brown);
+        font-size: 1.75rem;
+      }
+      .site-footer { background-color: var(--primary-brown); }
+      .site-footer a { color: var(--white); text-decoration: none; }
+      .site-footer a:hover { color: var(--secondary-gold); }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="home.html">
+          <img src="images/brand-logo-color.svg" alt="Camp Woof's and Wiggle's logo" width="110" height="110">
+    
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-brand ms-lg-3">Book a Stay</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-hero d-flex align-items-center text-white">
+      <div class="container text-center py-5">
+        <span class="feature-badge mb-3">Our Services</span>
+        <h1 class="display-3 fw-bold mt-3 mb-3">Care options designed for every pup’s needs</h1>
+        <p class="lead col-lg-8 mx-auto mb-4">From playful daycare to overnight boarding and special extras, we offer supportive services that keep tails wagging.</p>
+        <a href="contact.html" class="btn btn-brand btn-lg me-2">Book a Stay</a>
+        <a href="about.html" class="btn btn-outline-light btn-lg">Learn More</a>
+      </div>
+    </header>
+
+    <main>
+      
+      <section class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <span class="text-uppercase fw-semibold accent-text">What We Offer</span>
+            <h2 class="display-6 fw-bold section-title mt-2">Trusted care with plenty of fun built in</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-5">
+              <div class="card info-card h-100 shadow-sm">
+                <div class="card-body p-4">
+                  <div class="service-icon mb-3"><i class="bi bi-sun"></i></div>
+                  
+                  <h3 class="h4">Dog Daycare</h3>
+                  <p class=""mb-0"><strong>What's Included:</strong>
+                    <ul>
+                     <li>Indoor and outdoor adventure areas</li>
+                     <li>Nap time for full-day campers</li>
+                     <li>Midday snack for full-day campers</li>
+                     <li>Free medication administration</li>
+                     <li>Individual attention from our trained camp counselors</li>
+                     <br>
+                     Full Day $30 (1 dog)
+                     Half Day $20 (1 dog)
+                     *Add $10 per dog, per full or half day
+                     </ul>
+                   </p>
+                  <p class="mb-0">A structured, social day filled with supervised play, enrichment, and lots of attention.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="card info-card h-100 shadow-sm">
+                <div class="card-body p-4">
+                  <div class="service-icon mb-3"><i class="bi bi-moon-stars"></i></div>
+                  <h3 class="h4">Overnight Boarding</h3>
+                  <p class="mb-0">A cozy home-away-from-home experience for dogs staying overnight or for an extended visit.</p>
+                  <p class="mb-0"><strong>What's Included:</strong><br>
+                    <ul>
+                     <li>All the services we provide to our full-day campers</li>
+                     <li>Private “bunks” for our overnight campers with individual cameras that allow parents to check in on their pups</li>
+                     <li>A free bath and nail trim for guests staying 3 or more days</li>
+                     <br>
+                     Nightly Overnight Camp Rate $40 (1 dog)
+                     *Add $15 per dog, per day in a shared bunk (Max 3)
+                    </ul>
+
+                   <strong>Note: All campers must be vaccinated, be spayed/neutered, and pass
+                   the free temperament assessment (free 1/2 day boarding session).</strong></p>
+                </div>
+              </div>
+            </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 text-center">
+        <div class="container">
+          <h2 class="display-6 fw-bold section-title">Want to find the best fit for your dog?</h2>
+          <p class="lead mb-4">Reach out to ask about availability, services, and booking details.</p>
+          <a href="contact.html" class="btn btn-brand btn-lg me-2">Contact Us</a>
+          <a href="home.html" class="btn btn-outline-brand btn-lg">Back Home</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer text-white py-5 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5>Camp Woof's and Wiggle's</h5>
+            <p class="mb-0">A fun, safe, and loving place for your dog to stay, play, and relax.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Visit Us</h5>
+            <p class="mb-0">52 Huskers Way<br>Lincoln, Nebraska 68501<br>(402) 222-2222</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Hours</h5>
+            <p class="mb-2">Tuesday–Thursday: 9am–7pm<br>Friday–Saturday: 9am–5pm</p>
+            <div class="d-flex gap-3 fs-4">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-light my-4">
+        <p class="mb-0 text-center">&copy; 2026 Camp Woof's and Wiggle's. All rights reserved.</p>
+        <p class="mb-0 text-center">Website Designed by: <a href="www.salvywebdesign.com">Alvy Web Design</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
