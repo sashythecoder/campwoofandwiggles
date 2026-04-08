@@ -1,0 +1,110 @@
+:root {
+        --primary-brown: #8b5e3c;
+        --primary-blue: #9ca9b0;
+        --secondary-tan: #c49a6c;
+        --secondary-gold: #ecac58;
+        --secondary-pink: #fbd3df;
+        --cream: #f7efe4;
+        --black: #000000;
+        --white: #ffffff;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: var(--cream);
+        color: var(--black);
+      }
+
+      h1, h2, h3, .navbar-brand {
+        font-family: "Grandstander", cursive;
+      }
+
+      .navbar {
+        background-color: var(--white) !important;
+      }
+
+      .navbar .nav-link {
+        color: var(--black);
+        font-weight: 600;
+      }
+
+      .navbar .nav-link.active,
+      .navbar .nav-link:hover {
+        color: var(--primary-brown);
+      }
+
+      .btn-brand {
+        background-color: var(--secondary-gold);
+        border-color: var(--secondary-gold);
+        color: var(--black);
+        font-weight: 700;
+      }
+
+      .btn-brand:hover {
+        background-color: var(--primary-brown);
+        border-color: var(--primary-brown);
+        color: var(--white);
+      }
+
+      .btn-outline-brand {
+        border: 2px solid var(--primary-brown);
+        color: var(--primary-brown);
+        font-weight: 700;
+      }
+
+      .btn-outline-brand:hover {
+        background-color: var(--primary-brown);
+        color: var(--white);
+      }
+
+      .page-hero {
+        min-height: 70vh;
+        background:
+          linear-gradient(rgba(139, 94, 60, 0.45), rgba(139, 94, 60, 0.45)),
+          url('https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      }
+
+      .section-title {
+        color: var(--primary-brown);
+      }
+
+      .accent-text {
+        color: var(--secondary-gold);
+      }
+
+      .info-card {
+        background-color: var(--white);
+        border: 0;
+        border-radius: 1rem;
+      }
+
+      .feature-badge {
+        background-color: var(--primary-blue);
+        color: var(--white);
+        padding: 0.6rem 1rem;
+        border-radius: 999px;
+        font-weight: 600;
+        display: inline-block;
+      }
+
+      .home-image {
+        width: 100%;
+        height: 100%;
+        min-height: 320px;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+      }
+
+      .site-footer {
+        background-color: var(--primary-brown);
+      }
+
+      .site-footer a {
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      .site-footer a:hover {
+        color: var(--secondary-gold);
+      }
