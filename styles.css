@@ -5,7 +5,7 @@
         --secondary-gold: #ecac58;
         --secondary-pink: #fbd3df;
         --cream: #f7efe4;
-        --black: #000000;
+        --black: #201b17;
         --white: #ffffff;
       }
 
@@ -21,6 +21,32 @@
 
       .navbar {
         background-color: var(--white) !important;
+      }
+
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 3.25rem;
+        height: 3.25rem;
+        border-radius: 50% 45% 50% 42%;
+        background: var(--secondary-gold);
+        color: var(--primary-brown);
+        transform: rotate(-6deg);
+      }
+
+      .brand-mark i {
+        transform: rotate(6deg);
+      }
+
+      .brand-name {
+        color: var(--primary-brown);
+        font-size: 1.05rem;
+        line-height: 0.9;
+      }
+
+      .brand-name small {
+        color: var(--black);
+        font-size: 0.78em;
       }
 
       .navbar .nav-link {
@@ -61,7 +87,7 @@
         min-height: 70vh;
         background:
           linear-gradient(rgba(139, 94, 60, 0.45), rgba(139, 94, 60, 0.45)),
-          url('https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+          url('dog-pack-of-puppies.jpg.jpg') center 42%/cover no-repeat;
       }
 
       .section-title {
@@ -107,4 +133,26 @@
 
       .site-footer a:hover {
         color: var(--secondary-gold);
+      }
+
+      .activity-section {
+        background: rgba(251, 211, 223, 0.35);
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid var(--primary-brown);
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 575.98px) {
+        .page-hero {
+          min-height: 78vh;
+        }
+
+        .page-hero .btn {
+          display: block;
+          width: 100%;
+          margin: 0.75rem 0 0 !important;
+        }
       }
